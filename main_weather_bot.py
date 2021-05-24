@@ -32,6 +32,8 @@ async def get_weather(message: types.Message):
 
         city = data['name']
         cur_weather = data['main']['temp']# текущая погода
+        
+        
 
         weather_description = data['weather'][0]['main'] #состояние погоды
         if weather_description in code_to_smile:
